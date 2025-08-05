@@ -10,153 +10,112 @@
       background-color: #ffffff;
       color: #111827;
       max-width: 800px;
-      margin: 50px auto;
+      margin: 40px auto;
       padding: 0 20px;
       line-height: 1.7;
+      text-align: center;
     }
 
     h1 {
+      font-size: 2.2em;
       color: #1e3a8a;
-      font-size: 2em;
-      margin-bottom: 0.2em;
-    }
-
-    h2 {
-      color: #1e3a8a;
-      border-bottom: 1px solid #e5e7eb;
-      padding-bottom: 4px;
-      margin-top: 40px;
-    }
-
-    a {
-      color: #1e3a8a;
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    a:hover {
-      text-decoration: underline;
-    }
-
-    ul {
-      padding-left: 20px;
-    }
-
-    .section {
-      margin-bottom: 40px;
+      margin-bottom: 10px;
     }
 
     .subtitle {
       font-size: 1.1em;
       color: #555;
-    }
-
-    .intro-container {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .intro-text {
-      flex: 1;
-      min-width: 250px;
+      margin-bottom: 25px;
     }
 
     .profile-pic {
-      width: 140px;
-      height: 140px;
-      border-radius: 50%;
+      width: 180px;
+      height: 180px;
       object-fit: cover;
+      border-radius: 20px;
+      margin-top: 10px;
+      margin-bottom: 30px;
     }
 
-    .entry-container {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      margin-bottom: 15px;
+    h2 {
+      font-size: 1.5em;
+      color: #1e3a8a;
+      border-bottom: 1px dashed #ccc;
+      padding-bottom: 6px;
+      margin: 50px 0 20px;
     }
 
-    .entry-left {
+    .affiliation-entry {
+      margin-bottom: 30px;
+    }
+
+    .school-name {
       font-weight: bold;
-      min-width: 160px;
+      font-size: 1.2em;
     }
 
-    .entry-right {
-      flex: 1;
-      margin-left: 20px;
+    .school-status {
+      font-size: 1em;
+      color: #666;
+      margin-bottom: 8px;
     }
 
-    .highlight {
+    .school-details {
+      font-size: 0.98em;
+      color: #333;
+    }
+
+    .bold {
       font-weight: 600;
     }
 
-    .subtext {
-      font-size: 0.95em;
-      color: #444;
+    .intro-paragraph {
+      text-align: justify;
+      max-width: 700px;
+      margin: 0 auto 30px;
     }
 
-    hr {
-      border: none;
-      border-top: 1px dashed #ccc;
-      margin: 30px 0;
+    strong {
+      font-weight: 700;
     }
   </style>
 </head>
 <body>
 
-  <div class="intro-container">
-    <div class="intro-text">
-      <h1>Jiwon Soh</h1>
-      <p class="subtitle"><strong>B.S. Student</strong>, Department of Electrical and Computer Engineering, Seoul National University</p>
-      <p>
-        I am an undergraduate student passionate about building scalable and efficient computing systems.  
-        My interests lie in <strong>network architecture design for machine learning acceleration</strong>,  
-        <strong>edge-server collaborative inference</strong>, and <strong>distributed systems</strong>.  
-        I strive to bridge low-level design and system-level optimization to advance future computing platforms.
-      </p>
-      <p>Vice Chair of the <strong>SNU Engineering Student Council</strong> (2022–2024)</p>
-    </div>
-    <img src="profile.jpg" alt="Jiwon Soh" class="profile-pic">
+  <h1>Jiwon Soh</h1>
+  <div class="subtitle"><strong>B.S. Student</strong>, Department of Electrical and Computer Engineering, Seoul National University</div>
+
+  <img src="profile.jpg" alt="Profile" class="profile-pic" />
+
+  <div class="intro-paragraph">
+    I am an undergraduate student passionate about building scalable and efficient computing systems.  
+    My interests lie in <strong>network architecture design for machine learning acceleration</strong>,  
+    <strong>edge-server collaborative inference</strong>, and <strong>distributed systems</strong>.  
+    I strive to bridge low-level design and system-level optimization to advance future computing platforms.
   </div>
 
-  <div class="section">
-    <h2> Affiliation</h2>
-    <div class="entry-container">
-      <div class="entry-left">Seoul National University</div>
-      <div class="entry-right">
-        <div><span class="highlight">Major:</span> Electrical and Computer Engineering</div>
-        <div class="subtext">Leave of absence for military service: 2023 2nd – 2025 1st</div>
-        <div class="subtext">Student Council Vice Chair of SNU Engineering (2022–2024)</div>
-      </div>
-    </div>
+  <div class="intro-paragraph">
+    Vice Chair of the <strong>SNU Engineering Student Council</strong> (2022–2024)
   </div>
 
-  <hr/>
+  <h2>Affiliation</h2>
 
-  <div class="section">
-    <h2> Research / Work Experience</h2>
-    <div class="entry-container">
-      <div class="entry-left">NXC Lab</div>
-      <div class="entry-right">
-        <div><span class="highlight">Undergraduate Researcher</span> | Dec 2024 – Jan 2025</div>
-        <div class="subtext">Advisor: Prof. Kyunghan Lee</div>
-        <div><span class="highlight">Research Area:</span> Scalable Distributed Computing</div>
-      </div>
+  <div class="affiliation-entry">
+    <div class="school-name">Seoul National University</div>
+    <div class="school-status">Undergraduate</div>
+    <div class="school-details">
+      <span class="bold">Major:</span> Electrical and Computer Engineering<br>
+      Leave of absence for military service: 2023 2nd – 2025 1st<br>
+      Vice Chair of the SNU Engineering Student Council (2022–2024)
     </div>
   </div>
 
-  <div class="section">
-    <h2> Skills</h2>
-    <ul>
-      <li>Languages: Python, C/C++, Verilog</li>
-      <li>Tools: PyTorch, TensorFlow, Vivado, Git</li>
-    </ul>
-  </div>
-
-  <div class="section">
-    <h2> Contact</h2>
-    <p>Email: <a href="mailto:emilysoh71@gmail.com">emilysoh71@gmail.com</a></p>
+  <div class="affiliation-entry">
+    <div class="school-name">Seoul Science High School</div>
+    <div class="school-status">Graduated</div>
+    <div class="school-details">
+      <span class="bold">Major:</span> Math, Physics
+    </div>
   </div>
 
 </body>
