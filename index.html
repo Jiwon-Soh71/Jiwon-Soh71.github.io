@@ -51,6 +51,25 @@
       color: #555;
     }
 
+    .intro-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .intro-text {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    .profile-pic {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
     .entry-container {
       display: flex;
       justify-content: space-between;
@@ -86,9 +105,20 @@
 </head>
 <body>
 
-  <h1>👋 Jiwon Soh</h1>
-  <p class="subtitle"><strong>B.S. Student</strong>, Department of Electrical and Computer Engineering, Seoul National University</p>
-  <p>Former vice chair of the <strong>SNU Engineering Student Council</strong> (2022–2024)</p>
+  <div class="intro-container">
+    <div class="intro-text">
+      <h1>👋 Jiwon Soh</h1>
+      <p class="subtitle"><strong>B.S. Student</strong>, Department of Electrical and Computer Engineering, Seoul National University</p>
+      <p>
+        I am an undergraduate student passionate about building scalable and efficient computing systems.  
+        My interests lie in <strong>network architecture design for machine learning acceleration</strong>,  
+        <strong>edge-server collaborative inference</strong>, and <strong>distributed systems</strong>.  
+        I strive to bridge low-level design and system-level optimization to advance future computing platforms.
+      </p>
+      <p>Vice Chair of the <strong>SNU Engineering Student Council</strong> (2022–2024)</p>
+    </div>
+    <img src="profile.jpg" alt="Jiwon Soh" class="profile-pic">
+  </div>
 
   <div class="section">
     <h2>🎓 Affiliation</h2>
@@ -98,13 +128,6 @@
         <div><span class="highlight">Major:</span> Electrical and Computer Engineering</div>
         <div class="subtext">Leave of absence for military service: 2023 2nd – 2025 1st</div>
         <div class="subtext">Student Council Vice Chair of SNU Engineering (2022–2024)</div>
-      </div>
-    </div>
-    <div class="entry-container">
-      <div class="entry-left">Seoul Science High School</div>
-      <div class="entry-right">
-        <div><span class="highlight">Major:</span> Math, Physics</div>
-        <div class="subtext">Graduated</div>
       </div>
     </div>
   </div>
@@ -135,7 +158,6 @@
   <div class="section">
     <h2>📫 Contact</h2>
     <p>Email: <a href="mailto:emilysoh71@gmail.com">emilysoh71@gmail.com</a></p>
-    <p>GitHub: <a href="https://github.com/Jiwon-Soh71" target="_blank">github.com/Jiwon-Soh71</a></p>
   </div>
 
 </body>
