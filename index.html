@@ -17,7 +17,7 @@
 
     h1 {
       font-size: 2.5em;
-      margin-bottom: 0.2em;
+      margin-bottom: 0.1em;
       color: #111;
     }
 
@@ -38,35 +38,16 @@
       text-decoration: underline;
     }
 
-    ul {
-      padding-left: 20px;
-    }
-
-    .section {
-      margin-bottom: 40px;
-    }
-
-    .subtitle {
-      font-size: 1.2em;
-      color: #111;
-    }
-
-    .intro-container {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .intro-text {
-      flex: 1;
-      min-width: 250px;
-    }
-
     .kor-name {
-      font-size: 1.4em;
-      font-weight: bold;
-      color: #111;
+      font-size: 1.5em;
+      margin-bottom: 20px;
+    }
+
+    .profile-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 30px;
+      margin-bottom: 30px;
     }
 
     .profile-pic {
@@ -74,6 +55,24 @@
       height: 150px;
       border-radius: 20px;
       object-fit: cover;
+    }
+
+    .profile-info {
+      flex: 1;
+    }
+
+    .subtitle {
+      font-size: 1.1em;
+      font-weight: bold;
+      margin-bottom: 12px;
+    }
+
+    .intro-text {
+      margin-top: 10px;
+    }
+
+    .section {
+      margin-bottom: 40px;
     }
 
     .entry-container {
@@ -101,44 +100,39 @@
       font-size: 0.95em;
       color: #444;
     }
-
-    hr {
-      border: none;
-      border-top: 1px dashed #ccc;
-      margin: 30px 0;
-    }
   </style>
 </head>
 <body>
 
-  <div class="intro-container">
+  <!-- 이름 및 사진 영역 -->
+  <h1>Jiwon Soh</h1>
+  <div class="kor-name">소지원</div>
+  <div class="profile-section">
     <img src="profile.jpg" alt="Jiwon Soh" class="profile-pic">
-    <div class="intro-text">
-      <h1>Jiwon Soh</h1>
-      <div class="kor-name">소지원</div>
-      <p class="subtitle"><strong>Undergraduate</strong>, Department of Electrical and Computer Engineering, Seoul National University</p>
-      <p>
+    <div class="profile-info">
+      <div class="subtitle">Undergraduate, Department of Electrical and Computer Engineering, Seoul National University</div>
+      <div class="intro-text">
         I am an undergraduate student passionate about building scalable and efficient computing systems.  
         My interests lie in <strong>network architecture design for machine learning acceleration</strong>,  
         <strong>edge-server collaborative inference</strong>, and <strong>distributed systems</strong>.  
         I strive to bridge low-level design and system-level optimization to advance future computing platforms.
-      </p>
+      </div>
     </div>
   </div>
 
+  <!-- 소속 -->
   <div class="section">
     <h2>Affiliation</h2>
     <div class="entry-container">
       <div class="entry-left">Seoul National University</div>
       <div class="entry-right">
-        <div><span class="highlight">Major:</span> Electrical and Computer Engineering</div>
+        <div>Undergraduate</div>
         <div class="subtext">Student Body President of SNU ECE (2022)</div>
       </div>
     </div>
   </div>
 
-  <hr/>
-
+  <!-- 리서치 경험 -->
   <div class="section">
     <h2>Research / Work Experience</h2>
     <div class="entry-container">
@@ -151,6 +145,7 @@
     </div>
   </div>
 
+  <!-- 기술 -->
   <div class="section">
     <h2>Skills</h2>
     <ul>
@@ -159,6 +154,7 @@
     </ul>
   </div>
 
+  <!-- 연락처 -->
   <div class="section">
     <h2>Contact</h2>
     <p>Email: <a href="mailto:emilysoh71@gmail.com">emilysoh71@gmail.com</a></p>
